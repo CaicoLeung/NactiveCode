@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form表单校验</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app">
+    <form action="https://jsonplaceholder.typicode.com/posts" target="_blank" class="form" id="form" method="POST">
+      <h2>注册账号</h2>
+      <div class="form-control">
+        <label for="username">用户名</label>
+        <input type="text" name="用户名" id="username" placeholder="Enter username" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="email">电子邮箱</label>
+        <input type="text" name="电子邮箱" id="email" placeholder="Enter email" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password">密码</label>
+        <input type="password" name="密码" id="password" placeholder="Enter password" />
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <label for="password2">确认密码</label>
+        <input type="password" name="确认密码" id="password2" placeholder="Enter password again" />
+        <small>Error message</small>
+      </div>
+      <button type="submit">提交</button>
+      <button type="reset">重置</button>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
