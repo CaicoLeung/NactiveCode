@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自定义视频播放器</title>
+  <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="video-wrapper">
+      <video
+        id="video"
+        class="video"
+        src="https://ksvcdn.duizhuang.com/other/tgyd-index.mp4"
+        poster="https://img.dz8.cn/topic/2021-04/a4395655f8958697c5cbaa0355d61f14.png!800x800rz"></video>
+    </div>
+    <div class="controls">
+      <button class="btn" id="play">
+        <i class="fa fa-play fa-2x"></i>
+      </button>
+      <button class="btn" id="stop">
+        <i class="fa fa-stop fa-2x"></i>
+      </button>
+      <input type="range" class="process" id="process" min="0" max="100" step="0.1" value="0">
+      <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

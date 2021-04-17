@@ -1,0 +1,37 @@
+#app {
+  width: 800px;
+  height: 600px;
+  margin: 100px auto;
+  background-color: #080D0E;
+}
+.controls {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.controls .btn {
+  flex: 0 0 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.controls .process {
+  flex: 1;
+  cursor: pointer;
+}
+.controls .timestamp {
+  flex: 0 0 100px;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.video-wrapper {
+  width: 800px;
+  height: 600px;
+}
+.video-wrapper .video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
