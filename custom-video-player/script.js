@@ -77,6 +77,7 @@ function handleProcess(el) {
 }
 function handleSetCurrentTimeEnd(el) {
     el.preventDefault();
+    process.style.cursor = 'grab';
     if (flag && video && process && timestamp) {
         var positionRate = (el.offsetX) / process.clientWidth;
         video.currentTime = positionRate * video.duration;
@@ -87,6 +88,7 @@ function handleSetCurrentTimeEnd(el) {
 function handleSetCurrentTimeStart(el) {
     el.preventDefault();
     flag = true;
+    process.style.cursor = 'grabbing';
     video.removeEventListener('timeupdate', handleTimeupdate);
 }
 function handleSetCurrentTime(el) {

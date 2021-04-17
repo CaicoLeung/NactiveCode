@@ -86,6 +86,7 @@ function handleProcess(el: Event) {
 
 function handleSetCurrentTimeEnd(el: MouseEvent) {
   el.preventDefault()
+  process.style.cursor = 'grab'
   if (flag && video && process && timestamp) {
     const positionRate = (el.offsetX) / process.clientWidth
     video.currentTime = positionRate * video.duration
@@ -97,6 +98,7 @@ function handleSetCurrentTimeEnd(el: MouseEvent) {
 function handleSetCurrentTimeStart(el: MouseEvent) {
   el.preventDefault()
   flag = true
+  process.style.cursor = 'grabbing'
   video.removeEventListener('timeupdate', handleTimeupdate)
 }
 
